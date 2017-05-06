@@ -9,8 +9,9 @@ import (
 func TestID(t *testing.T) {
 	runtime.GOMAXPROCS(runtime.NumCPU())
 
-	for i := 1; i <= 100000; i++ {
-		fmt.Printf("ID: %s \n", ID())
+	id := ID()
+	for i := 1; i <= 1000000; i++ {
+		fmt.Printf("ID: %s \n", <-id)
 	}
 
 }
