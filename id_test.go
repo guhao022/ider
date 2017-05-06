@@ -1,9 +1,9 @@
-package id
+package ider
 
 import (
-	"testing"
-	"runtime"
 	"fmt"
+	"runtime"
+	"testing"
 )
 
 func TestID(t *testing.T) {
